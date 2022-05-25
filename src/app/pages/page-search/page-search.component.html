@@ -1,0 +1,16 @@
+<div class="content">
+  <div>
+    <img src="./assets/image/GithubStars.svg" alt="Logo" />
+  </div>
+  <form class="content-input" (submit)="onSubmit($event)">
+    <input
+      [formControl]="inputSearch"
+      class="inputSearch"
+      type="text"
+      placeholder="github username..."
+    />
+    <button class="search" type="submit">
+      <img src="./assets/image/Search.svg" alt="" srcset="" />
+    </button>
+  </form>
+</div>

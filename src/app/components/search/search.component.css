@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  gap: 45px;
+}
+.search {
+  outline: none;
+  width: 774px;
+  padding-bottom: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #bababa;
+}
+.buttonSearch {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.Logo {
+  cursor: pointer;
+}

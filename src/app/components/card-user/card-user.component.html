@@ -1,0 +1,34 @@
+<div class="cardUser">
+  <div class="contentAvatar">
+    <div class="Avatar">
+      <img class="avatarImg" [src]="userInfo.avatar_url" alt="" srcset="" />
+    </div>
+    <div class="contentIdentificacao">
+      <p class="contentName">{{ userInfo.name }}</p>
+      <p class="contentNickName">{{ userInfo.nickname }}</p>
+    </div>
+  </div>
+  <div class="contentInfo">
+    <div class="contentBio">
+      <p>{{ userInfo.bio }}</p>
+    </div>
+    <div class="contentDados">
+      <div class="dados" *ngIf="userInfo.twitter_username !== null">
+        <img src="./assets/image/users.svg" alt="" />
+        <p>@{{ userInfo.twitter_username }}</p>
+      </div>
+      <div class="dados" *ngIf="userInfo.location !== null">
+        <img src="./assets/image/map-pin.svg" alt="" srcset="" />
+        <p>{{ userInfo.location }}</p>
+      </div>
+      <div class="dados" *ngIf="userInfo.email !== null">
+        <img src="./assets/image/mail.svg" alt="" />
+        <p>{{ userInfo.email }}</p>
+      </div>
+      <div class="dados" *ngIf="userInfo.blog !== null && userInfo.blog !== ''">
+        <img src="./assets/image/globe.svg" alt="" srcset="" />
+        <p>{{ userInfo.blog }}</p>
+      </div>
+    </div>
+  </div>
+</div>
